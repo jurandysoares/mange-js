@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibe endereço</title>
+</head>
+<body>
+    <h1>Descobre endereço</h1>
+    <div>
+    <input 
+        type="text" 
+        name="cep" 
+        id="cep" 
+        pattern="\d{2}.d{3}-\d{3}"
+        placeholder="Formato: 00.000-000"
+        maxlength="12"
+        >
+        <button type="submit" onclick="atualizarEndereco()">Enviar</button>
+    </div>
+    <p id="endereco"></p>
+    <script src="app.js"></script>
+</body>
+</html>
